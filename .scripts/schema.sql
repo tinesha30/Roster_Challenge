@@ -9,7 +9,7 @@ CREATE TABLE Artists
 CREATE TABLE Rates
 (
     RateId INT identity PRIMARY KEY NOT NULL,
-    RateAmount VARCHAR(500) NOT NULL,
+    RateAmount FLOAT(53) NOT NULL,
     ArtistId INT NOT NULL,
     FOREIGN KEY (ArtistId) REFERENCES Artists(ArtistId)
 )
